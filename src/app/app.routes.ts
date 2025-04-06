@@ -5,7 +5,7 @@ import { AddProductComponent } from './add-product/add-product.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 export const routes: Routes = [
-    { path: '', pathMatch: 'full', redirectTo: 'path' },
+    { path: '', pathMatch: 'full', redirectTo: 'productList' },
     { path: 'productList', component: ProductListComponent},
     { path: 'productDetails', component: ProductdetailsComponent },
     { path: 'addProduct', component: AddProductComponent},
