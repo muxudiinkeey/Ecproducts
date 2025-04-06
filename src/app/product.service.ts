@@ -12,11 +12,15 @@ export class ProductService {
   getProducts() {
     return this.http.get<product>(`http://localhost:3000/products`);
   }
-  getProduct(id: string) {
-    return this.http.get<product>(`http://localhost:3000/products/${id}`);
-  }
+ // getProduct(id: string) {
+ //   return this.http.get<product>(`http://localhost:3000/products/${id}`);
+ // }
 
-  updateProduct(product: product) {
+ /*  
+   addProduct(data: product) {
+    return this.http.post('http://localhost:3000/products', data);
+  } 
+ updateProduct(product: product) {
     return this.http.put<product>(
       `http://localhost:3000/products/${product.id}`,
       product
@@ -26,7 +30,5 @@ export class ProductService {
   deleteProduct(id: number) {
     return this.http.delete(`http://localhost:3000/products/${id}`);
   }
-  addProduct(data: product) {
-    return this.http.post('http://localhost:3000/products', data);
-  }
+*/
 }
